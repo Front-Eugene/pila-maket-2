@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Рассрочка онлайн</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a href="#_1">Каталог</a>
+                </li>
+
+                <li>
+                    <a href="#_2">Рассрочка</a>
+                </li>
+
+                <li>
+                    <a href="#_3">Отзывы</a>
+                </li>
+
+                <li>
+                    <a href="#order_form">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <a href="#order_form">
+            <button class="fly-button">
+                оставить заявку
+            </button>
+        </a>
+
+        <section class="screen">
+            <div class="shadow"></div>
+            <div class="wrap">
+                <img class="product-img" src="src/img/product.png" alt="">
+                <h1>
+                    Цепные пилы в рассрочку <br />
+                    без первого платежа <br />
+                    от 28руб/мес
+                </h1>
+                <div class="timer" id="timer"></div>
+                <p class="sale">Акция действует до конца дня</p>
+            </div>
+        </section>
+
+        <section id="_1" class="catalog">
+            <h2 class="section-title">- Каталог -</h2>
+            <div class="catalog-wrap">
+                <div class="product-card" style="background: url(src/img/product-1.jpg) center center/cover no-repeat;">
+                    <p>Цена: <br /> от 28 BYN/мес</p>
+                </div>
+            
+                <div class="product-card" style="background: url(src/img/product-2.jpg) center center/cover no-repeat;">
+                    <p>Цена: <br /> от 28 BYN/мес</p>
+                </div>
+            
+                <div class="product-card" style="background: url(src/img/product-3.jpg) center center/cover no-repeat;">
+                    <p>Цена: <br /> от 28 BYN/мес</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="_2" class="installment">
+            <div class="installment-wrap">
+                <h2>Бери сейчас - плати потом!</h2>
+                <p>
+                    Рассрочка на все модели до 60 месяцев!
+                </p>
+                <p>
+                    Рассрочка предоставляется всем <span>без справки о доходах!</span>
+                </p>
+            </div>
+            <img src="src/img/installment.png" alt="">
+        </section>
+
+        <section id="_3">
+            <h2 class="section-title">- Отзывы -</h2>
+            <div class="reviews-wrap">
+                <div class="review-card">
+                    <div class="img-wrap">
+                        <img src="src/img/face-2.png" alt="Дарья">
+                    </div>
+                    <div>
+                        <h3 data-heading-tag="H3">Дарья</h3>
+                        <p>
+                            Цепная пила стала незаменимым помощником мужу в хозяйстве. Она экономит время и силы, а также очень удобно хранится.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="img-wrap">
+                        <img src="src/img/face-1.png" alt="Иван">
+                    </div>
+                    <div>
+                        <h3 data-heading-tag="H3">Иван</h3>
+                        <p>
+                            Цепная пила просто незаменима! Она идеально подходит для работы в 
+                            саду и значительно упрощает процесс распилки древесины. Очень доволен покупкой!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="img-wrap">
+                        <img src="src/img/face-3.png" alt="Мария">
+                    </div>
+                    <div>
+                        <h3 data-heading-tag="H3">Мария</h3>
+                        <p>
+                            Купила эту цепную пилу для работы на даче, и она полностью 
+                            оправдала мои ожидания. Пила качественная и удобная в использовании.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form">
+            <form id="order_form" action="send.php" method="post" onsubmit="return checkForm(this);">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <input class="form__input" name="name" id="name" type="text" placeholder="Имя" required=""
+                    minlength="2">
+                <input class="form__input tel" name="phone" id="phone" type="tel" placeholder="Телефон" required="">
+                <button class="order button">Отправить заявку</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-item">
+            <p>
+                <span>Время работы:</span>пн-вс 09:00 - 21:00
+            </p>
+
+            <p class="address">
+                ООО "Цитруском" УНП 193699866 <br />
+                220046, г. Минск, а/я 46
+            </p>
+
+            <p class="delivery">
+                Акция действует на всей территории Беларуси
+            </p>
+        </div>
+
+        <div class="footer-item">
+            <p class="footer-contact">
+                Контакты
+            </p>
+
+            <p>
+                <a href="tel:+375293142363">
+                    <span>Телефон:</span>+375 (29) 314-23-63
+                </a>
+            </p>
+
+            <p>
+                <a href="mailto:citrustele@mail.ru">
+                    <span>Почта:</span>citrustele@mail.ru
+                </a>
+            </p>
+        </div>
+
+        <div class="footer-item">
+            <p>
+                <a href="documents/politics.html">
+                    <span>Политика конфиденциальности</span>
+                </a>
+            </p>
+
+            <p>
+                <a href="documents/agreement.html">
+                    <span>Пользовательское соглашение</span>
+                </a>
+            </p>
+
+            <p>
+                <a href="documents/dogovor_vozvrata.html">
+                    <span>Договор возврата товара и денежных средств</span>
+                </a>
+            </p>
+
+            <p>
+                <a href="documents/dostavka.html">
+                    <span>Договор доставки</span>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="src/js/timer.js"></script>
+
+    <script>
+        // МАСКА ТЕЛЕФОНА
+        [].forEach.call(document.querySelectorAll('.tel'), function (input) {
+            var keyCode;
+            function mask(event) {
+                event.keyCode && (keyCode = event.keyCode);
+                var pos = this.selectionStart;
+                if (pos < 3) event.preventDefault();
+                var matrix = "+375 (__) ___ - __ - __",
+                    i = 0,
+                    def = matrix.replace(/\D/g, ""),
+                    val = this.value.replace(/\D/g, ""),
+                    new_value = matrix.replace(/[_\d]/g, function (a) {
+                        return i < val.length ? val.charAt(i++) : a
+                    });
+                i = new_value.indexOf("_");
+                if (i != -1) {
+                    i < 5 && (i = 3);
+                    new_value = new_value.slice(0, i)
+                }
+                var reg = matrix.substr(0, this.value.length).replace(/_+/g,
+                    function (a) {
+                        return "\\d{1," + a.length + "}"
+                    }).replace(/[+()]/g, "\\$&");
+                reg = new RegExp("^" + reg + "$");
+                if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) {
+                    this.value = new_value;
+                }
+                if (event.type == "blur" && this.value.length < 5) {
+                    this.value = "";
+                }
+            }
+
+            input.addEventListener("input", mask, false);
+            input.addEventListener("focus", mask, false);
+            input.addEventListener("blur", mask, false);
+            input.addEventListener("keydown", mask, false);
+
+        });
+    </script>
+</body>
+
+</html>
